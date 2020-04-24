@@ -16,6 +16,7 @@
 		2673BCDC2453223900908E61 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCDB2453223900908E61 /* RecipeModel.swift */; };
 		2673BCDE2453264C00908E61 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCDD2453264C00908E61 /* RecipeView.swift */; };
 		2673BCE02453871D00908E61 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCDF2453871D00908E61 /* Helper.swift */; };
+		2673BCE22453993900908E61 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCE12453993900908E61 /* RecipeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2673BCDB2453223900908E61 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		2673BCDD2453264C00908E61 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		2673BCDF2453871D00908E61 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		2673BCE12453993900908E61 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				2673BCBD245308D600908E61 /* SceneDelegate.swift */,
 				2673BCBF245308D600908E61 /* ContentView.swift */,
 				2673BCDD2453264C00908E61 /* RecipeView.swift */,
+				2673BCE12453993900908E61 /* RecipeDetailView.swift */,
 				2673BCC1245308D800908E61 /* Assets.xcassets */,
 				2673BCC6245308D800908E61 /* LaunchScreen.storyboard */,
 				2673BCC9245308D800908E61 /* Info.plist */,
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2673BCE22453993900908E61 /* RecipeDetailView.swift in Sources */,
 				2673BCBC245308D600908E61 /* AppDelegate.swift in Sources */,
 				2673BCDC2453223900908E61 /* RecipeModel.swift in Sources */,
 				2673BCBE245308D600908E61 /* SceneDelegate.swift in Sources */,
