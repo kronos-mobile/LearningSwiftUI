@@ -13,6 +13,10 @@
 		2673BCC2245308D800908E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2673BCC1245308D800908E61 /* Assets.xcassets */; };
 		2673BCC5245308D800908E61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2673BCC4245308D800908E61 /* Preview Assets.xcassets */; };
 		2673BCC8245308D800908E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2673BCC6245308D800908E61 /* LaunchScreen.storyboard */; };
+		2673BCD324530B5400908E61 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCD224530B5400908E61 /* PostResponse.swift */; };
+		2673BCD524530B9700908E61 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCD424530B9700908E61 /* PostModel.swift */; };
+		2673BCD724530D8400908E61 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCD624530D8400908E61 /* PostViewModel.swift */; };
+		2673BCD924530E1B00908E61 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCD824530E1B00908E61 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2673BCC4245308D800908E61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2673BCC7245308D800908E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2673BCC9245308D800908E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2673BCD224530B5400908E61 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		2673BCD424530B9700908E61 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		2673BCD624530D8400908E61 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		2673BCD824530E1B00908E61 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +64,16 @@
 		2673BCBA245308D600908E61 /* LearnSwiftUi */ = {
 			isa = PBXGroup;
 			children = (
+				2673BCD124530A3800908E61 /* ViewModel */,
+				2673BCD024530A3000908E61 /* View */,
+				2673BCCF24530A1F00908E61 /* Model */,
 				2673BCBB245308D600908E61 /* AppDelegate.swift */,
 				2673BCBD245308D600908E61 /* SceneDelegate.swift */,
-				2673BCBF245308D600908E61 /* ContentView.swift */,
 				2673BCC1245308D800908E61 /* Assets.xcassets */,
 				2673BCC6245308D800908E61 /* LaunchScreen.storyboard */,
 				2673BCC9245308D800908E61 /* Info.plist */,
 				2673BCC3245308D800908E61 /* Preview Content */,
+				2673BCD824530E1B00908E61 /* NetworkManager.swift */,
 			);
 			path = LearnSwiftUi;
 			sourceTree = "<group>";
@@ -73,6 +84,31 @@
 				2673BCC4245308D800908E61 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2673BCCF24530A1F00908E61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2673BCD224530B5400908E61 /* PostResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2673BCD024530A3000908E61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2673BCBF245308D600908E61 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2673BCD124530A3800908E61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2673BCD424530B9700908E61 /* PostModel.swift */,
+				2673BCD624530D8400908E61 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2673BCD724530D8400908E61 /* PostViewModel.swift in Sources */,
 				2673BCBC245308D600908E61 /* AppDelegate.swift in Sources */,
+				2673BCD524530B9700908E61 /* PostModel.swift in Sources */,
+				2673BCD924530E1B00908E61 /* NetworkManager.swift in Sources */,
 				2673BCBE245308D600908E61 /* SceneDelegate.swift in Sources */,
+				2673BCD324530B5400908E61 /* PostResponse.swift in Sources */,
 				2673BCC0245308D600908E61 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
