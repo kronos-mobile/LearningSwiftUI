@@ -6,7 +6,7 @@
 //
 import UIKit
 
-struct RecipeModel: Identifiable, Hashable {
+struct RecipeModel: Identifiable, Hashable, Codable {
     var id = UUID()
     var name = ""
     var origin = ""
