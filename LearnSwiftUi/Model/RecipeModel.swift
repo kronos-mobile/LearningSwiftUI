@@ -11,4 +11,5 @@ struct RecipeModel: Identifiable, Hashable {
     var name = ""
     var origin = ""
     var favourite = false
+    var countryCode = ""
 }

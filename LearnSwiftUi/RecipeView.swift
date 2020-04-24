@@ -16,6 +16,9 @@ struct RecipeView: View {
                     .font(.headline)
                     .foregroundColor(Color.blue)
                     .bold()
+                
+                //Image(recipe.countryCode)
+                
                 Text("\(recipe.origin)")
                     .font(.subheadline)
                     .foregroundColor(Color.purple)
