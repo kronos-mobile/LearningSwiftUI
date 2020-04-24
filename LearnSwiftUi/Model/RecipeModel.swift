@@ -10,4 +10,5 @@ struct RecipeModel: Identifiable, Hashable {
     var id = UUID()
     var name = ""
     var origin = ""
+    var favourite = false
 }
