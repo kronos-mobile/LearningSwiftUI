@@ -12,6 +12,7 @@ struct PageTitleView: View {
     var body: some View {
         Text(title)
             .font(.largeTitle)
+            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
     }
 }
 
