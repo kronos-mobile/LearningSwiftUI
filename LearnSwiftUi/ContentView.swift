@@ -34,7 +34,7 @@ struct ContentView_Previews: PreviewProvider {
             ContentView()
                 .colorScheme(.dark)
                 .background(Color.black)
-//            .previewDevice("iPad Pro (9.7-inch)")
+            .previewDevice("iPad Pro (9.7-inch)")
         }
     }
 }
