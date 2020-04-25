@@ -28,9 +28,9 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-//            ContentView()
-//                .colorScheme(.dark)
-//                .background(Color.black)
+            ContentView()
+                .colorScheme(.dark)
+                .background(Color.black)
 //            .previewDevice("iPad Pro (9.7-inch)")
         }
     }
