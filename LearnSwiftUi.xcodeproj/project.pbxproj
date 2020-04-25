@@ -19,6 +19,7 @@
 		2673BCEE2454900100908E61 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCED2454900100908E61 /* OrderRowView.swift */; };
 		2673BCF02454905000908E61 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCEF2454905000908E61 /* MenuRowView.swift */; };
 		2673BCF22454908F00908E61 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCF12454908F00908E61 /* RatingsView.swift */; };
+		2673BCF52454919900908E61 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCF42454919900908E61 /* PageTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		2673BCED2454900100908E61 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
 		2673BCEF2454905000908E61 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
 		2673BCF12454908F00908E61 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		2673BCF42454919900908E61 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				2673BCBD245308D600908E61 /* SceneDelegate.swift */,
 				2673BCBF245308D600908E61 /* ContentView.swift */,
 				2673BCEB24548EED00908E61 /* ContentHeaderView.swift */,
+				2673BCF42454919900908E61 /* PageTitleView.swift */,
 				2673BCC1245308D800908E61 /* Assets.xcassets */,
 				2673BCC6245308D800908E61 /* LaunchScreen.storyboard */,
 				2673BCC9245308D800908E61 /* Info.plist */,
@@ -197,6 +200,7 @@
 			files = (
 				2673BCBC245308D600908E61 /* AppDelegate.swift in Sources */,
 				2673BCEA24548E8400908E61 /* MenuListView.swift in Sources */,
+				2673BCF52454919900908E61 /* PageTitleView.swift in Sources */,
 				2673BCE824548DEE00908E61 /* OrderListView.swift in Sources */,
 				2673BCEC24548EED00908E61 /* ContentHeaderView.swift in Sources */,
 				2673BCF22454908F00908E61 /* RatingsView.swift in Sources */,
