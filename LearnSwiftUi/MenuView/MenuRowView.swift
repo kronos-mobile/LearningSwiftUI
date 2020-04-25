@@ -11,7 +11,7 @@ struct MenuRowView: View {
     var body: some View {
         HStack(alignment: .top, spacing: 15) {
             Image("1_100w")
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Huli Chicken Pizza")
                     .font(.title)
                     .fontWeight(.light)
@@ -26,6 +26,6 @@ struct MenuRowView: View {
 struct MenuRowView_Previews: PreviewProvider {
     static var previews: some View {
         MenuRowView()
-            .environment(\.sizeCategory, .accessibilityExtraLarge)
+//            .environment(\.sizeCategory, .accessibilityExtraLarge)
     }
 }
