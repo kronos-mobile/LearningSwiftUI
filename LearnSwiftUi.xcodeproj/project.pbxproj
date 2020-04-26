@@ -30,6 +30,7 @@
 		2673BD052455008F00908E61 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD022455008F00908E61 /* HistoryModel.swift */; };
 		2673BD07245505C300908E61 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD06245505C300908E61 /* MenuDetailView.swift */; };
 		2673BD09245518BE00908E61 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD08245518BE00908E61 /* HistoryDetailView.swift */; };
+		2673BD0B245548FA00908E61 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD0A245548FA00908E61 /* RootTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		2673BD022455008F00908E61 /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		2673BD06245505C300908E61 /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 		2673BD08245518BE00908E61 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		2673BD0A245548FA00908E61 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				2673BCFC245496FD00908E61 /* ListHeaderView.swift */,
+				2673BD0A245548FA00908E61 /* RootTabView.swift */,
 				2673BCE624548DD100908E61 /* HistoryView */,
 				2673BCE524548DCB00908E61 /* Model */,
 				2673BCE424548DC100908E61 /* MenuView */,
@@ -235,6 +238,7 @@
 				2673BD052455008F00908E61 /* HistoryModel.swift in Sources */,
 				2673BCBC245308D600908E61 /* AppDelegate.swift in Sources */,
 				2673BCF72454931700908E61 /* HistoryRowView.swift in Sources */,
+				2673BD0B245548FA00908E61 /* RootTabView.swift in Sources */,
 				2673BCEA24548E8400908E61 /* MenuListView.swift in Sources */,
 				2673BCF52454919900908E61 /* PageTitleView.swift in Sources */,
 				2673BCFB2454942800908E61 /* HistoryView.swift in Sources */,
