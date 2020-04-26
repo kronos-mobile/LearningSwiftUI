@@ -35,6 +35,7 @@
 		2673BD0F2455C5A500908E61 /* QuantityStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD0E2455C5A500908E61 /* QuantityStepperView.swift */; };
 		2673BD112455C94800908E61 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD102455C94800908E61 /* MapViewController.swift */; };
 		2673BD132455C96600908E61 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD122455C96600908E61 /* MapView.swift */; };
+		2673BD152455E46100908E61 /* CloseUpMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD142455E46100908E61 /* CloseUpMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		2673BD0E2455C5A500908E61 /* QuantityStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityStepperView.swift; sourceTree = "<group>"; };
 		2673BD102455C94800908E61 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2673BD122455C96600908E61 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2673BD142455E46100908E61 /* CloseUpMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseUpMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				2673BD08245518BE00908E61 /* HistoryDetailView.swift */,
 				2673BD102455C94800908E61 /* MapViewController.swift */,
 				2673BD122455C96600908E61 /* MapView.swift */,
+				2673BD142455E46100908E61 /* CloseUpMapView.swift */,
 				2673BCF8245493B200908E61 /* HistoryListView.swift */,
 				2673BCFA2454942800908E61 /* HistoryView.swift */,
 			);
@@ -258,6 +261,7 @@
 				2673BD132455C96600908E61 /* MapView.swift in Sources */,
 				2673BCFB2454942800908E61 /* HistoryView.swift in Sources */,
 				2673BCE824548DEE00908E61 /* OrderListView.swift in Sources */,
+				2673BD152455E46100908E61 /* CloseUpMapView.swift in Sources */,
 				2673BCEC24548EED00908E61 /* ContentHeaderView.swift in Sources */,
 				2673BCFF2454E47000908E61 /* SelectedImageView.swift in Sources */,
 				2673BCFD245496FD00908E61 /* ListHeaderView.swift in Sources */,

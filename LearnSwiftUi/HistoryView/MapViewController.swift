@@ -14,6 +14,7 @@ class MapViewController: UIViewController {
     var longitude:CLLocationDegrees = 14.2467
     var regionRadius:CLLocationDistance = 1000000
     private let mapView = MKMapView()
+    
     func updateMap(){
         
         let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
@@ -22,6 +23,7 @@ class MapViewController: UIViewController {
         annotation.coordinate = coordinate
         mapView.addAnnotation(annotation)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
