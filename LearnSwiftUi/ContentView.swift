@@ -28,8 +28,10 @@ struct ContentView: View {
                 .layoutPriority(isMenuDisplayed ? 0.5 : 1.0)
             
 //            Spacer()
-            
-        }.padding()
+            .animation(.spring())
+        }
+//        .animation(.spring())
+        .padding()
     }
 }
 
