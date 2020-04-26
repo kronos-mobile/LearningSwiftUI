@@ -9,15 +9,17 @@
 import SwiftUI
 ///A `View`for entering in an order. Takes basic information about the order from `menuItem`
 struct MenuDetailView: View {
+    let sizes: [Size] = [.small, .medium, .large]
     @EnvironmentObject var settings:UserPreferences
     @ObservedObject var orderModel:OrderModel
     @State var didOrder = false
+    @State var quantity = 1
     var menuItem:MenuItem
     var formattedPrice:String{
-        String(format:"%3.2f",menuItem.price)
+        String(format:"%3.2f",menuItem.price * Double(quantity) * settings.size.rawValue)
     }
     func addItem(){
-        orderModel.add(menuID: menuItem.id)
+//        orderModel.add(menuID: menuItem.id)
         didOrder = true
     }
     
@@ -36,18 +38,30 @@ struct MenuDetailView: View {
                 .layoutPriority(3)
                 
             Spacer()
-            HStack{
-                Spacer()
-                Text("Pizza size")
-                Text(settings.size.formatted())
+                
+            Picker(selection: $settings.size, label: Text("Pizza Size")) {
+                ForEach(sizes, id: \.self) { size in
+                    Text(size.formatted()).tag(size)
+                }
             }
+            .pickerStyle(SegmentedPickerStyle())
+//            HStack{
+//                Spacer()
+//                Text("Pizza size")
+//                Text(settings.size.formatted())
+//            }
             .font(.headline)
-            HStack{
-                Text("Quantity:")
-                Text("1")
-                    .bold()
-                Spacer()
+                
+            Stepper(value: $quantity, in: 1...10) {
+                Text("Quantity: \(quantity)")
+                .bold()
             }
+//            HStack{
+//                Text("Quantity:")
+//                Text("1")
+//                    .bold()
+//                Spacer()
+//            }
             .padding()
             HStack{
                 Text("Order:  \(formattedPrice)")
@@ -68,9 +82,12 @@ struct MenuDetailView: View {
                         .foregroundColor(Color("IP"))
                         .cornerRadius(5)
                 }
-                .alert(isPresented: $didOrder) {
-                    Alert(title: Text("Pizza Ordered"), message: Text("You ordered a " + self.menuItem.name))
-                }
+//                .alert(isPresented: $didOrder) {
+//                    Alert(title: Text("Pizza Ordered"), message: Text("You ordered a " + self.menuItem.name))
+//                }
+                    .sheet(isPresented: $didOrder) {
+                        ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel: self.orderModel, quantity: self.$quantity, size: self.$settings.size)
+                    }
                 
                 Spacer()
             }

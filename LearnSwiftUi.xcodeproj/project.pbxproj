@@ -31,6 +31,7 @@
 		2673BD07245505C300908E61 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD06245505C300908E61 /* MenuDetailView.swift */; };
 		2673BD09245518BE00908E61 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD08245518BE00908E61 /* HistoryDetailView.swift */; };
 		2673BD0B245548FA00908E61 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD0A245548FA00908E61 /* RootTabView.swift */; };
+		2673BD0D24554FAD00908E61 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BD0C24554FAD00908E61 /* ConfirmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		2673BD06245505C300908E61 /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 		2673BD08245518BE00908E61 /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		2673BD0A245548FA00908E61 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		2673BD0C24554FAD00908E61 /* ConfirmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				2673BCE924548E8400908E61 /* MenuListView.swift */,
 				2673BD06245505C300908E61 /* MenuDetailView.swift */,
+				2673BD0C24554FAD00908E61 /* ConfirmView.swift */,
 				2673BCEF2454905000908E61 /* MenuRowView.swift */,
 				2673BCF12454908F00908E61 /* RatingsView.swift */,
 			);
@@ -250,6 +253,7 @@
 				2673BCF02454905000908E61 /* MenuRowView.swift in Sources */,
 				2673BCBE245308D600908E61 /* SceneDelegate.swift in Sources */,
 				2673BCF9245493B200908E61 /* HistoryListView.swift in Sources */,
+				2673BD0D24554FAD00908E61 /* ConfirmView.swift in Sources */,
 				2673BCEE2454900100908E61 /* OrderRowView.swift in Sources */,
 				2673BCC0245308D600908E61 /* ContentView.swift in Sources */,
 			);
