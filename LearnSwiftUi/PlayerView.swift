@@ -24,8 +24,9 @@ struct PlayerView: View {
                 .shadow(radius: 15).offset(x: 0, y: -90)
                 .padding(.bottom, -90)
             
+            Text("Hello there")
             Text(player.name)
-                .font(.system(size: 30))
+                .font(.system(size: 50))
                 .fontWeight(.bold)
             
             StatText(statName: "Age", statValue: String(player.age))
@@ -39,6 +40,18 @@ struct PlayerView: View {
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerView(player: players[0])
+        Group {
+            PlayerView(player: players[2])
+                .previewDevice("iPhone 8")
+                .previewDisplayName("iPhone 8")
+                .environment(\.sizeCategory, .extraLarge)
+            
+            PlayerView(player: players[2])
+            .previewDevice("iPhone 8")
+            .previewDisplayName("iPhone 8")
+            .environment(\.sizeCategory, .extraSmall)
+            
+            PlayerView(player: players[2]).previewDevice("iPhone SE")
+        }
     }
 }
