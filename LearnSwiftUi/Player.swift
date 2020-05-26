@@ -29,7 +29,7 @@ let toronto = Team(color: Color(red: 0.718, green: 0.165, blue: 0.263), imageNam
 
 let players = [
     Player(id: 0, name: "Andre Iguodala", imageName: "andre", team: goldenState, age: 35, height: "6' 6\"", weight: 215),
-    Player(id: 1, name: "Danny Green", imageName: "danny", team: toronto, age: 31, height: "6' 6\"", weight: 215),
+    Player(id: 1, name: "Danny Green fn4endfgsdj", imageName: "danny", team: toronto, age: 31, height: "6' 6\"", weight: 215),
     Player(id: 2, name: "DeMarcus Cousins", imageName: "demarc", team: goldenState, age: 28, height: "6' 11\"", weight: 270),
     Player(id: 3, name: "Draymond Green", imageName: "dray", team: goldenState, age: 29, height: "6' 7\"", weight: 230),
     Player(id: 4, name: "Kawhi Leonard", imageName: "kawhi", team: toronto, age: 27, height: "6' 7\"", weight: 230),

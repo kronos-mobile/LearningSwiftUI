@@ -20,7 +20,7 @@ struct StatText: View {
             Text(statValue).font(.system(size: 40))
                 .fontWeight(.light)
             Spacer()
-        }
+        }.minimumScaleFactor(0.5)
     }
 }
 

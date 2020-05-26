@@ -22,6 +22,10 @@ struct PlayerList: View {
 
 struct PlayerList_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerList()
+        Group {
+            PlayerList().previewDevice("iPhone XS Max")
+            .previewDisplayName("iPhone XS Max")
+            .environment(\.sizeCategory, .extraLarge)
+        }
     }
 }
