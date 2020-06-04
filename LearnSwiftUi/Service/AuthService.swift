@@ -59,6 +59,7 @@ extension AuthService: AuthApi {
                     .validateEmail(email: email)
                     .request(usingHttpService: httpService)
                     .responseJSON { response in
+                        print("response: \(response)")
                         guard response.response?.statusCode == 200 else {
                             promise(.success(false))
                             return

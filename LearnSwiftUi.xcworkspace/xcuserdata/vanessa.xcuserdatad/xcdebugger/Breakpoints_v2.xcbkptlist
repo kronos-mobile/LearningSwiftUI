@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "87CB55CC-D416-4592-8692-7C487F92C62F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "088A2A28-0AA1-49EF-B27E-210BB8A4C5C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearnSwiftUi/Service/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "checkEmail(email:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51559342-285F-4012-9DF2-872485B169FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearnSwiftUi/Service/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "checkEmail(email:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CAF84CC6-63DB-4365-870E-796EC74A9FB5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearnSwiftUi/Service/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "checkEmail(email:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CAF84CC6-63DB-4365-870E-796EC74A9FB5 - c155f73abf21ba0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearnSwiftUi.AuthService.checkEmail(email: Swift.String) -&gt; Combine.Future&lt;Swift.Bool, Swift.Never&gt;"
+                  moduleName = "LearnSwiftUi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vanessa/searchrebel/ios_dir/LearnSwiftUi/LearnSwiftUi/Service/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "CAF84CC6-63DB-4365-870E-796EC74A9FB5 - c155f73abf21ba0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LearnSwiftUi.AuthService.checkEmail(email: Swift.String) -&gt; Combine.Future&lt;Swift.Bool, Swift.Never&gt;"
+                  moduleName = "LearnSwiftUi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vanessa/searchrebel/ios_dir/LearnSwiftUi/LearnSwiftUi/Service/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "CAF84CC6-63DB-4365-870E-796EC74A9FB5 - f53107ca733314c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((Swift.Result&lt;Swift.Bool, Swift.Never&gt;) -&gt; ()) -&gt; () in LearnSwiftUi.AuthService.checkEmail(email: Swift.String) -&gt; Combine.Future&lt;Swift.Bool, Swift.Never&gt;"
+                  moduleName = "LearnSwiftUi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vanessa/searchrebel/ios_dir/LearnSwiftUi/LearnSwiftUi/Service/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "81">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

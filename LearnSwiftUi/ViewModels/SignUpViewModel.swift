@@ -1,17 +1,31 @@
 import Foundation
 import Combine
 
+class StatusViewModel: ObservableObject {
+    var title: String
+    var color: ColorCodes
+    
+    init(title: String, color: ColorCodes) {
+        self.title = title
+        self.color = color
+    }
+}
+
 class SignUpViewModel: ObservableObject {
+    private let authApi: AuthApi
+    private let authServiceParser: AuthServiceParseable
     private var cancellableBag = Set<AnyCancellable>()
     
     @Published var username: String = ""
-    var usernameError: String = "Required"
+    @Published var usernameError: String = "Required"
     @Published var email: String = ""
-    var emailError: String = "Required"
+    @Published var emailError: String = "Required"
     @Published var password: String = ""
-    var passwordError: String = "Required"
+    @Published var passwordError: String = "Required"
     @Published var confirmPassword: String = ""
-    var confirmPasswordError: String = "Required"
+    @Published var confirmPasswordError: String = "Required"
+    @Published var enableSignUp: Bool = false
+    @Published var statusViewModel: StatusViewModel = StatusViewModel(title: "", color: .success)
     
     private var usernameValidPublisher: AnyPublisher<Bool, Never> {
         return $username
@@ -30,6 +44,16 @@ class SignUpViewModel: ObservableObject {
         return emailRequiredPublisher
             .filter { $0.isValid }
             .map { (email: $0.email, isValid: $0.email.isValidEmail()) }
+            .eraseToAnyPublisher()
+    }
+    
+    private var emailServerValidPublisher: AnyPublisher<Bool, Never> {
+        return emailValidPublisher
+            .filter { $0.isValid }
+            .map { $0.email }
+            .debounce(for: 0.5, scheduler: RunLoop.main)
+            .removeDuplicates()
+            .flatMap {[authApi] in authApi.checkEmail(email: $0) }
             .eraseToAnyPublisher()
     }
     
@@ -63,7 +87,10 @@ class SignUpViewModel: ObservableObject {
     
     
     
-    init() {
+    init(authApi: AuthApi, authServiceParser: AuthServiceParseable) {
+        self.authApi = authApi
+        self.authServiceParser = authServiceParser
+        
         usernameValidPublisher
             .receive(on: RunLoop.main)
             .dropFirst()
@@ -80,8 +107,13 @@ class SignUpViewModel: ObservableObject {
         
         emailValidPublisher
             .receive(on: RunLoop.main)
-            .dropFirst()
             .map { $0.isValid ? "": "Email is not valid" }
+            .assign(to: \.emailError, on: self)
+            .store(in: &cancellableBag)
+        
+        emailServerValidPublisher
+            .receive(on: RunLoop.main)
+            .map { $0 ? "": "Email is already used" }
             .assign(to: \.emailError, on: self)
             .store(in: &cancellableBag)
         
@@ -111,11 +143,46 @@ class SignUpViewModel: ObservableObject {
             .map { $0 ? "": "Passwords does not match" }
                 .assign(to: \.confirmPasswordError, on: self)
             .store(in: &cancellableBag)
+        
+        Publishers.CombineLatest4(usernameValidPublisher, emailServerValidPublisher, passwordValidPublisher, passwordEqualPublisher)
+            .map { username, email, password, confirm in
+                return username && email && password && confirm
+            }
+            .receive(on: RunLoop.main)
+            .assign(to: \.enableSignUp, on: self)
+            .store(in: &cancellableBag)
     }
     
     
     deinit {
         cancellableBag.removeAll()
+    }
+}
+
+extension SignUpViewModel {
+    func signUp() -> Void {
+        authApi.signUp(username: username, email: email, password: password)
+            .flatMap {[authServiceParser] in
+                authServiceParser.parseSignUpResponse(statusCode: $0.statusCode, data: $0.data)
+        }
+        .map { result in
+            switch result {
+            case .success:
+                return StatusViewModel(title: "Sign Up is successful", color: ColorCodes.success)
+            case .failure:
+                return StatusViewModel(title: "Sign Up failed", color: ColorCodes.failure)
+            }
+        }
+        .receive(on: RunLoop.main)
+        .replaceError(with: StatusViewModel(title: "Sign Up failed", color: ColorCodes.failure))
+        .handleEvents(receiveOutput: {[weak self] _ in
+            self?.username = ""
+            self?.email = ""
+            self?.password = ""
+            self?.confirmPassword = ""
+        })
+        .assign(to: \.statusViewModel, on: self)
+        .store(in: &cancellableBag)
     }
 }
 
