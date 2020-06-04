@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2648E6852489A4E4007C60D3 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2648E6842489A4E4007C60D3 /* Coin.swift */; };
+		2648E6872489A5DA007C60D3 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2648E6862489A5DA007C60D3 /* CryptoService.swift */; };
 		2673BCBC245308D600908E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCBB245308D600908E61 /* AppDelegate.swift */; };
 		2673BCBE245308D600908E61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCBD245308D600908E61 /* SceneDelegate.swift */; };
-		2673BCC0245308D600908E61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCBF245308D600908E61 /* ContentView.swift */; };
+		2673BCC0245308D600908E61 /* CoinList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCBF245308D600908E61 /* CoinList.swift */; };
 		2673BCC2245308D800908E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2673BCC1245308D800908E61 /* Assets.xcassets */; };
 		2673BCC5245308D800908E61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2673BCC4245308D800908E61 /* Preview Assets.xcassets */; };
 		2673BCC8245308D800908E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2673BCC6245308D800908E61 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2648E6842489A4E4007C60D3 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		2648E6862489A5DA007C60D3 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 		2673BCB8245308D600908E61 /* LearnSwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2673BCBB245308D600908E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2673BCBD245308D600908E61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2673BCBF245308D600908E61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2673BCBF245308D600908E61 /* CoinList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinList.swift; sourceTree = "<group>"; };
 		2673BCC1245308D800908E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2673BCC4245308D800908E61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2673BCC7245308D800908E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				2673BCBB245308D600908E61 /* AppDelegate.swift */,
 				2673BCBD245308D600908E61 /* SceneDelegate.swift */,
-				2673BCBF245308D600908E61 /* ContentView.swift */,
+				2673BCBF245308D600908E61 /* CoinList.swift */,
+				2648E6862489A5DA007C60D3 /* CryptoService.swift */,
+				2648E6842489A4E4007C60D3 /* Coin.swift */,
 				2673BCC1245308D800908E61 /* Assets.xcassets */,
 				2673BCC6245308D800908E61 /* LaunchScreen.storyboard */,
 				2673BCC9245308D800908E61 /* Info.plist */,
@@ -147,7 +153,9 @@
 			files = (
 				2673BCBC245308D600908E61 /* AppDelegate.swift in Sources */,
 				2673BCBE245308D600908E61 /* SceneDelegate.swift in Sources */,
-				2673BCC0245308D600908E61 /* ContentView.swift in Sources */,
+				2648E6852489A4E4007C60D3 /* Coin.swift in Sources */,
+				2648E6872489A5DA007C60D3 /* CryptoService.swift in Sources */,
+				2673BCC0245308D600908E61 /* CoinList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
