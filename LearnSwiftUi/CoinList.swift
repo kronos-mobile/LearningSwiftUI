@@ -2,10 +2,14 @@ import SwiftUI
 import Combine
 
 struct CoinList: View {
-    private let viewModel = CoinListViewModel()
+    @ObservedObject private var viewModel = CoinListViewModel()
     var body: some View {
-        Text("Hello, World!").onAppear {
-            self.viewModel.fetchCoins()
+        NavigationView {
+            List(viewModel.coinViewModels, id: \.self) { coinViewModel in
+                Text(coinViewModel.displayText)
+            }.onAppear {
+                self.viewModel.fetchCoins()
+            }.navigationBarTitle("Coins")
         }
     }
 }
@@ -40,8 +44,18 @@ struct CoinViewModel: Hashable {
     }
     
     var formattedPrice: String {
-        // do some formatting
-        coin.price
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        
+        guard let price = Double(coin.price), let formattedPrice = numberFormatter.string(from: NSNumber(value: price)) else {
+            return ""
+        }
+        
+        return formattedPrice
+    }
+    
+    var displayText: String {
+        return name + " - " + formattedPrice
     }
     
     init(_ coin: Coin) {
