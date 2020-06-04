@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2648E66B2488ACB3007C60D3 /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2648E66A2488ACB3007C60D3 /* ColorCodes.swift */; };
 		2673BCBC245308D600908E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCBB245308D600908E61 /* AppDelegate.swift */; };
 		2673BCBE245308D600908E61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCBD245308D600908E61 /* SceneDelegate.swift */; };
 		2673BCC0245308D600908E61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673BCBF245308D600908E61 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2648E66A2488ACB3007C60D3 /* ColorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
 		2673BCB8245308D600908E61 /* LearnSwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2673BCBB245308D600908E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2673BCBD245308D600908E61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2648E6692488AC5A007C60D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2648E66A2488ACB3007C60D3 /* ColorCodes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2673BCAF245308D600908E61 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		2673BCBA245308D600908E61 /* LearnSwiftUi */ = {
 			isa = PBXGroup;
 			children = (
+				2648E6692488AC5A007C60D3 /* Models */,
 				2673BCBB245308D600908E61 /* AppDelegate.swift */,
 				2673BCBD245308D600908E61 /* SceneDelegate.swift */,
 				2673BCBF245308D600908E61 /* ContentView.swift */,
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2648E66B2488ACB3007C60D3 /* ColorCodes.swift in Sources */,
 				2673BCBC245308D600908E61 /* AppDelegate.swift in Sources */,
 				2673BCBE245308D600908E61 /* SceneDelegate.swift in Sources */,
 				2673BCC0245308D600908E61 /* ContentView.swift in Sources */,
